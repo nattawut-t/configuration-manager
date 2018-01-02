@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "react",
+    // transform-async-to-generator
+    "es2017",
+    // supports ES6
+    // needed for UglifyJSPlugin
+    "es2015",
+    // suports arrow funciton and others advances of ES6
+    "stage-0"
+  ],
+  "plugins": []
+}
