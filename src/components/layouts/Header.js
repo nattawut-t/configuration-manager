@@ -6,7 +6,7 @@ import {
   NavbarToggler,
   NavItem,
   NavLink,
-  Badge,
+  // Badge,
 } from 'reactstrap'
 import HeaderDropdown from './HeaderDropdown'
 
@@ -51,12 +51,15 @@ class Header extends Component {
           </NavItem>
         </Nav>
         <Nav className="ml-auto" navbar>
-          <NavItem className="d-md-down-none">
-            <NavLink href="#"><i className="icon-bell" /><Badge pill color="danger">5</Badge></NavLink>
-          </NavItem>
-          <NavItem className="d-md-down-none">
+          {/* <NavItem className="d-md-down-none">
+            <NavLink href="#">
+              <i className="icon-bell" />
+              <Badge pill color="danger">5</Badge>
+            </NavLink>
+          </NavItem> */}
+          {/* <NavItem className="d-md-down-none">
             <NavLink href="#"><i className="icon-list" /></NavLink>
-          </NavItem>
+          </NavItem> */}
           {/* <NavItem className="d-md-down-none">
             <NavLink href="#"><i className="icon-location-pin" /></NavLink>
           </NavItem> */}
