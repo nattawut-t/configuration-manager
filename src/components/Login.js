@@ -17,8 +17,8 @@ import alertMessage from '../shares/alertMessage'
 
 class Login extends Component {
   state = {
-    username: 'PeerAdmin',
-    password: 'P@ssw0rd',
+    username: '',
+    password: '',
   }
 
   handleChange = (name, value) => this.setState({ [name]: value })
@@ -95,10 +95,13 @@ class Login extends Component {
                 <Card className="text-white bg-primary py-5 d-md-down-none" style={{ width: '44%' }}>
                   <CardBody className="text-center">
                     <div>
-                      <h3>Configuration Manager</h3>
-                      <h5>for</h5>
+                      <h3>OriginCert</h3>
+                      <h3>Administration</h3>
                       <p>&nbsp;</p>
-                      <h1>Origincert</h1>
+                      <p>&nbsp;</p>
+                      <h5>Configuration Management</h5>
+                      <h5>and</h5>
+                      <h5>Settings</h5>
                     </div>
                   </CardBody>
                 </Card>
