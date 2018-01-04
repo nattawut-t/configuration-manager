@@ -12,26 +12,7 @@ import {
   Input,
 } from 'reactstrap'
 
-// const required = value => (value ? undefined : 'Required')
-// const renderField = ({
-//   input,
-//   label,
-//   type,
-//   meta: { touched, error, warning },
-// }) =>
-//   <div>
-//     <Input
-//       {...input}
-//       type={type}
-//       placeholder={label}
-//       required
-//     />
-//     {touched &&
-//       ((error && <span>{error}</span>) ||
-//         (warning && <span>{warning}</span>))}
-//   </div>
-
-const Peer = (/*{ shortening, cancel, history }*/) =>
+const Peer = () =>
   <div className="animated fadeIn">
     <Card>
       <CardHeader>
@@ -57,27 +38,6 @@ const Peer = (/*{ shortening, cancel, history }*/) =>
             </FormGroup>
           </Col>
         </Row>
-        {/* <div className="form-actions" style={{ textAlign: 'right' }}>
-
-          {shortening ?
-            <Button
-              className="px-4"
-              onClick={cancel}
-            >
-              Cancel
-            </Button> : ''
-          }
-          &nbsp;&nbsp;
-          <Button
-            name="submit"
-            color="primary"
-            className="px-4"
-            onClick={() => history.push('/configs/chaincode')}
-          >
-            <Icon spin name={shortening ? 'circle-o-notch' : ''} size="lg" />&nbsp;&nbsp;Next
-          </Button>
-
-        </div> */}
       </CardBody>
     </Card>
   </div >
