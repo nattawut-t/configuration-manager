@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { reduxForm } from 'redux-form'
 import {
@@ -8,39 +8,63 @@ import {
   CardHeader,
   CardBody,
   FormGroup,
-  InputGroup,
+  // InputGroup,
   Input,
+  Label,
+  Form,
 } from 'reactstrap'
 
-const Peer = () =>
-  <div className="animated fadeIn">
-    <Card>
-      <CardHeader>
-        <strong>Step 1: Peer</strong>
-        <small> - configuration for peer</small>
-      </CardHeader>
-      <CardBody>
-        <Row>
-          <Col xs="12">
-            <FormGroup>
-              <InputGroup>
-                <Input placeholder="Credential" />
-              </InputGroup>
-            </FormGroup>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs="12">
-            <FormGroup>
-              <InputGroup>
+class Peer extends Component {
+  state = {
+    credentialFilename: '',
+  }
+
+  handleFileChange = (name, value) => this.setState({
+    [name]: value,
+  })
+
+  render() {
+    const { credentialFilename } = this.state
+
+    return (
+      <div className="animated fadeIn">
+        <Card>
+          <CardHeader>
+            <strong>Step 1: Peer Information</strong>
+            {/* <small> - configuration for peer</small> */}
+          </CardHeader>
+          <CardBody>
+            <Form>
+              <FormGroup>
+                <Row>
+                  <Col xs="9">
+                    <Label for="exampleEmail" readOnly>Credential:</Label>{'  '}
+                    <Input
+                      placeholder="Credential"
+                      value={credentialFilename}
+                    />
+                  </Col>
+                  <Col xs="3">
+                    <Label for="exampleEmail" >&nbsp;</Label>{'  '}
+                    <Input
+                      type="file"
+                      placeholder="Port"
+                      onChange={({ target: { value } }) => this.handleFileChange('credentialFilename', value)}
+                    />
+                  </Col>
+                </Row>
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleEmail">Channel:</Label>{'  '}
                 <Input placeholder="Channel" />
-              </InputGroup>
-            </FormGroup>
-          </Col>
-        </Row>
-      </CardBody>
-    </Card>
-  </div >
+              </FormGroup>
+            </Form>
+          </CardBody>
+        </Card>
+      </div >
+    )
+  }
+}
 
 const form = reduxForm({
   form: 'peerForm',

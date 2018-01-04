@@ -36,8 +36,8 @@ const Chaincode = (/*{ shortening, cancel, history }*/) =>
 
     <Card>
       <CardHeader>
-        <strong>Step 2: Chaincode</strong>
-        <small> - configuration for chaincode</small>
+        <strong>Step 2: Chaincode Information</strong>
+        {/* <small> - configuration for chaincode</small> */}
       </CardHeader>
       <CardBody>
         <Row>

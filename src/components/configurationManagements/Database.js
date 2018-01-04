@@ -87,10 +87,6 @@ class database extends Component {
                     </Col>
                   </Row>
                 </FormGroup>
-                {/* <FormGroup>
-                  <Label for="exampleEmail">Port:</Label>{'  '}
-                  <Input placeholder="Port" />
-                </FormGroup> */}
                 <FormGroup>
                   <Label for="exampleEmail">Username:</Label>{'  '}
                   <Input placeholder="Username" />
