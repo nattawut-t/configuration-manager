@@ -2,36 +2,19 @@ import React from 'react'
 import { withRouter } from 'react-router'
 import { reduxForm } from 'redux-form'
 import {
-  Row,
-  Col,
+  // Row,
+  // Col,
   Card,
   CardHeader,
   CardBody,
   FormGroup,
-  InputGroup,
+  // InputGroup,
   Input,
+  Form,
+  Label,
 } from 'reactstrap'
 
-// const required = value => (value ? undefined : 'Required')
-// const renderField = ({
-//   input,
-//   label,
-//   type,
-//   meta: { touched, error, warning },
-// }) =>
-//   <div>
-//     <Input
-//       {...input}
-//       type={type}
-//       placeholder={label}
-//       required
-//     />
-//     {touched &&
-//       ((error && <span>{error}</span>) ||
-//         (warning && <span>{warning}</span>))}
-//   </div>
-
-const Chaincode = (/*{ shortening, cancel, history }*/) =>
+const Chaincode = () =>
   <div className="animated fadeIn">
 
     <Card>
@@ -40,7 +23,7 @@ const Chaincode = (/*{ shortening, cancel, history }*/) =>
         {/* <small> - configuration for chaincode</small> */}
       </CardHeader>
       <CardBody>
-        <Row>
+        {/* <Row>
           <Col xs="12">
             <FormGroup>
               <InputGroup>
@@ -58,36 +41,19 @@ const Chaincode = (/*{ shortening, cancel, history }*/) =>
               leave blank for default latest version
             </FormGroup>
           </Col>
-        </Row>
-        {/* <div className="form-actions" style={{ textAlign: 'right' }}>
+        </Row> */}
 
-          <Button
-            name="pervious"
-            color="primary"
-            className="px-4"
-            onClick={() => history.push('/configs/peer')}
-          >
-            <Icon spin name={shortening ? 'circle-o-notch' : ''} size="lg" />&nbsp;&nbsp;Back
-          </Button>
-          {shortening ?
-            <Button
-              className="px-4"
-              onClick={cancel}
-            >
-              Cancel
-            </Button> : ''
-          }
-          &nbsp;&nbsp;
-          <Button
-            name="next"
-            color="primary"
-            className="px-4"
-            onClick={() => history.push('/configs/api')}
-          >
-            <Icon spin name={shortening ? 'circle-o-notch' : ''} size="lg" />&nbsp;&nbsp;Next
-          </Button>
-
-        </div> */}
+        <Form>
+          <FormGroup>
+            <Label for="exampleEmail">Chaincode ID *:</Label>{'  '}
+            <Input placeholder="Chaincode ID" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="exampleEmail">Chaincode Version:</Label>{'  '}
+            <Input placeholder="Chaincode Version" />
+          </FormGroup>
+          leave &#34;Chaincode Version&#34; blank for default latest version
+        </Form>
       </CardBody>
     </Card>
   </div >

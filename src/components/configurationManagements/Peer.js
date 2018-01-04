@@ -38,7 +38,7 @@ class Peer extends Component {
               <FormGroup>
                 <Row>
                   <Col xs="9">
-                    <Label for="exampleEmail" readOnly>Credential:</Label>{'  '}
+                    <Label for="exampleEmail" readOnly>Credential *:</Label>{'  '}
                     <Input
                       placeholder="Credential"
                       value={credentialFilename}
@@ -55,7 +55,7 @@ class Peer extends Component {
                 </Row>
               </FormGroup>
               <FormGroup>
-                <Label for="exampleEmail">Channel:</Label>{'  '}
+                <Label for="exampleEmail">Channel *:</Label>{'  '}
                 <Input placeholder="Channel" />
               </FormGroup>
             </Form>

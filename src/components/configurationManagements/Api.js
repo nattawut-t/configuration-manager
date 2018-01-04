@@ -24,19 +24,19 @@ const Api = () =>
       <CardBody>
         <Form>
           <FormGroup>
-            <Label for="exampleEmail">Server:</Label>{'  '}
+            <Label for="exampleEmail">Server *:</Label>{'  '}
             <Input placeholder="Server" />
           </FormGroup>
           <FormGroup>
-            <Label for="exampleEmail">Https Certificate:</Label>{'  '}
+            <Label for="exampleEmail">Https Certificate *:</Label>{'  '}
             <Input placeholder="Https Certificate" />
           </FormGroup>
           <FormGroup>
-            <Label for="exampleEmail">Https Key:</Label>{'  '}
+            <Label for="exampleEmail">Https Key *:</Label>{'  '}
             <Input placeholder="Https Key" />
           </FormGroup>
           <FormGroup>
-            <Label for="exampleEmail">Authentication Type:</Label>{'  '}
+            <Label for="exampleEmail">Authentication Type *:</Label>{'  '}
             <select name="method" id="method" placeholder="Method" >
               <option>Authentication Type</option>
               <option>API Key</option>

@@ -68,7 +68,7 @@ class database extends Component {
             {datasource === 1 ?
               <Form>
                 <FormGroup>
-                  <Label for="exampleEmail">Method:</Label>{'  '}
+                  <Label for="exampleEmail">Method *:</Label>{'  '}
                   <select name="method" id="method" placeholder="Method" >
                     <option>Standard (TCP/IP)</option>
                     <option>Local Socket/Pipe</option>
@@ -78,7 +78,7 @@ class database extends Component {
                 <FormGroup>
                   <Row>
                     <Col xs="9">
-                      <Label for="exampleEmail">Host:</Label>{'  '}
+                      <Label for="exampleEmail">Host *:</Label>{'  '}
                       <Input placeholder="Host" />
                     </Col>
                     <Col xs="3">
@@ -88,11 +88,11 @@ class database extends Component {
                   </Row>
                 </FormGroup>
                 <FormGroup>
-                  <Label for="exampleEmail">Username:</Label>{'  '}
+                  <Label for="exampleEmail">Username *:</Label>{'  '}
                   <Input placeholder="Username" />
                 </FormGroup>
                 <FormGroup>
-                  <Label for="exampleEmail">Password:</Label>{'  '}
+                  <Label for="exampleEmail">Password *:</Label>{'  '}
                   <Input placeholder="Password" />
                 </FormGroup>
                 <FormGroup>

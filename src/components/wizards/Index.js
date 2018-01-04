@@ -76,13 +76,11 @@ class Index extends Component {
           toggle={this.toggle}
           className={this.props.className}
         >
-          <ModalHeader toggle={this.toggle}>Configuration Wizard</ModalHeader>
+          <ModalHeader toggle={this.toggle}>OriginCert - Configuration Wizard</ModalHeader>
           <ModalBody>
             <CurrentComponent />
           </ModalBody>
           <ModalFooter>
-            {/* <Button color="secondary" onClick={this.toggle}>Back</Button>{' '}
-            <Button color="primary" onClick={this.toggle}>Next</Button> */}
 
             {step > firstStep ?
               <Button
