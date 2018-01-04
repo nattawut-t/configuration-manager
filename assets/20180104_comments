@@ -1,0 +1,10 @@
+Configuration Wizard
+    1. Add status bar
+    2. Group step 1, 2 into same group
+    (done) 3. Step 1 - change wording 'Credential' to 'Configuration File'
+    (done) 4. Step 1 - change wording 'Channel' to 'Channel Name'
+    (done) 5. Step 3 - change wording 'Use built in database' to 'Use built-in maria database (default)'
+    (done) 6. Step 3 - change wording 'Use custom database' to 'Use external maria database'
+    (done) 7. Step 3 - change wording 'Default Schema' to 'Default Database'
+    8. Step 4 - move https into new group
+    9. Step 4 - move authen into new group
