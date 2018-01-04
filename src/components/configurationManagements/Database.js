@@ -48,7 +48,7 @@ class database extends Component {
                     onChange={({ target: { name, value } }) => this.handleChange(name, value)}
                     checked={datasource === 0}
                   />{' '}
-                  &nbsp;Use built in database (default)
+                  &nbsp;Use built-in maria database (default)
                 </Label>
               </FormGroup>
               <FormGroup check>
@@ -60,7 +60,7 @@ class database extends Component {
                     onChange={({ target: { name, value } }) => this.handleChange(name, value)}
                     checked={datasource === 1}
                   />{' '}
-                  &nbsp;Use customize database
+                  &nbsp;Use external maria database
                 </Label>
               </FormGroup>
             </FormGroup>
@@ -96,32 +96,11 @@ class database extends Component {
                   <Input placeholder="Password" />
                 </FormGroup>
                 <FormGroup>
-                  <Label for="exampleEmail">Default Schema:</Label>{'  '}
-                  <Input placeholder="Default schema" />
+                  <Label for="exampleEmail">Default Database:</Label>{'  '}
+                  <Input placeholder="Default Database" />
                 </FormGroup>
               </Form> : ''
             }
-
-            {/* <Row>
-          <Col xs="12">
-            <FormGroup>
-              Use default database
-              <InputGroup>
-                <Input type="radio" value={0} />
-              </InputGroup>
-            </FormGroup>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs="12">
-            <FormGroup>
-              Use customize database
-              <InputGroup>
-                <Input type="radio" value={1} />
-              </InputGroup>
-            </FormGroup>
-          </Col>
-        </Row> */}
           </CardBody>
         </Card>
       </div >

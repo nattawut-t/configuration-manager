@@ -18,7 +18,7 @@ const Api = () =>
   <div className="animated fadeIn">
     <Card>
       <CardHeader>
-        <strong>Step 1: API Information</strong>
+        <strong>Step 4: API Information</strong>
         {/* <small> - configuration for peer</small> */}
       </CardHeader>
       <CardBody>
