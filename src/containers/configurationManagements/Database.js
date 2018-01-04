@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Component from '../../components/configs/Peer'
+import Component from '../../components/configurationManagements/Database'
 // import { shortenUrl, shortenUrlCancelled } from '../redux/modules/urlShortener'
 
 const mapStateToProps = () => ({
