@@ -10,20 +10,25 @@ export default {
     },
     {
       title: true,
-      name: 'Configuration',
+      name: 'Configuration Management',
     },
     {
-      name: 'Peer Setting',
+      name: 'Peer',
       url: '/configs/peer',
       icon: 'icon-puzzle',
     },
     {
-      name: 'Company Profile',
-      url: '/configs/profile',
+      name: 'Chaincode',
+      url: '/configs/chaincode',
       icon: 'icon-puzzle',
     },
     {
-      name: 'API Setting',
+      name: 'Database',
+      url: '/configs/database',
+      icon: 'icon-puzzle',
+    },
+    {
+      name: 'API',
       url: '/configs/api',
       icon: 'icon-puzzle',
     },
