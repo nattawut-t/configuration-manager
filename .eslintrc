@@ -32,7 +32,8 @@
     "no-plusplus": 0,
     "no-param-reassign": 0,
     "react/forbid-prop-types": 0,
-    "react/no-unused-state": 0
+    "react/no-unused-state": 0,
+    "radix": 0
   },
   "globals": {
     "window": true,
