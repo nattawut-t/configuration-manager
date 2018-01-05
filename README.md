@@ -1,6 +1,6 @@
-# OriginCert Configuration Manager
+# OriginCert Web Application
 
-The Web Application for configuration management of OriginCert system.
+The Web Application for configuration, installation, and demonstration of OriginCert system.
 
 This project is comprised of technology listed below.
 
@@ -19,8 +19,8 @@ This project is comprised of technology listed below.
 To run the project, you need to have software utilities listed below installed on your machine or server.
 
 - `npm` version 5.5.1 or upper (^5.5.1)
-- `node` version 8.4.0 or upper (^8.4.0)
-- `yarn` (optional) version 1.2.1 or upper (^1.2.1)
+- `node` version 8.9.0 or upper (^8.9.0)
+- `yarn` (optional) version 1.3.2 or upper (^1.3.2)
 
 ## Installation
 
